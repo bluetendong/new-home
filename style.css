@@ -42,7 +42,7 @@ header h1 {
 
 .menubutten {
   background: linear-gradient(145deg, #ffffff, #e9e5ff);
-  padding: 12px 24px;
+  padding: 5px 5px;
   border-radius: 14px;
   border: 1.5px solid #c4bfff;
   box-shadow: 0 4px 8px rgba(170, 190, 255, 0.4);
