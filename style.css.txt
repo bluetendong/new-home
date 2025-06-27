@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+html {
+  scroll-behavior: smooth; /* 부드러운 스크롤 */
+}
+
+body {
+  margin: 0;
+  font-family: 'Nanum Pen Script', cursive, sans-serif;
+  background: #fff8f0;
+  color: #333;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #ffcad4;
+  padding: 15px 10px 30px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #a83279;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+  background-color: #ff7e9a;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #a83279;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #673147;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  border-bottom: 2px solid #ff7e9a;
+  padding-bottom: 8px;
+  color: #c75485;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffe9f0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #c75485;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(199,84,133,0.4);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+#trpg ul, #music ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+#movie article {
+  background: #ffe9f0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#movie h3 {
+  margin: 0 0 5px 0;
+  color: #a83279;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #a83279;
+  border-top: 1px solid #ff7e9a;
+  margin-top: 40px;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

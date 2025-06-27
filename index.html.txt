@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🖌️ 내 덕질 기록 공간</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#profile">자캐 프로필</a></li>
+        <li><a href="#drawing">드로잉 갤러리</a></li>
+        <li><a href="#trpg">TRPG 기록</a></li>
+        <li><a href="#movie">영화 리뷰</a></li>
+        <li><a href="#music">좋아하는 음악</a></li>
+      </ul>
+    </nav>
+    <h1>🌟 유나의 덕질 공간 🌟</h1>
+    <p>드로잉, 자캐, TRPG, 영화, 음악 다 모여있어요!</p>
+  </header>
+
+  <main>
+    <section id="profile">
+      <h2>🧑 자캐 프로필</h2>
+      <div class="profile-card">
+        <img src="images/character.png" alt="자캐 이미지" />
+        <div>
+          <h3>이름: 릴리</h3>
+          <p>성별: 여성</p>
+          <p>나이: 19세</p>
+          <p>성격: 활발하고 쾌활함</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="drawing">
+      <h2>🎨 드로잉 갤러리</h2>
+      <div class="gallery">
+        <img src="images/drawing1.jpg" alt="드로잉1" />
+        <img src="images/drawing2.jpg" alt="드로잉2" />
+        <img src="images/drawing3.jpg" alt="드로잉3" />
+      </div>
+    </section>
+
+    <section id="trpg">
+      <h2>🎲 TRPG 기록</h2>
+      <ul>
+        <li>2025-06-20 - 신비한 숲 탐험</li>
+        <li>2025-06-25 - 고대 유적 발굴 작전</li>
+        <li>2025-06-27 - 마법사의 탑 공격</li>
+      </ul>
+    </section>
+
+    <section id="movie">
+      <h2>🎬 영화 리뷰</h2>
+      <article>
+        <h3>어느 날의 꿈</h3>
+        <p>⭐️⭐️⭐️⭐️☆</p>
+        <p>잔잔하고 몽환적인 분위기가 좋았어요.</p>
+      </article>
+      <article>
+        <h3>별의 여행자</h3>
+        <p>⭐️⭐️⭐️☆☆</p>
+        <p>스토리는 흥미로웠지만 전개가 조금 느렸어요.</p>
+      </article>
+    </section>
+
+    <section id="music">
+      <h2>🎵 좋아하는 음악</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Favorite Song 1</a> - 상큼한 느낌</li>
+        <li><a href="https://www.youtube.com/watch?v=3GwjfUFyY6M" target="_blank">Favorite Song 2</a> - 힐링 뮤직</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 유나의 덕질 팬페이지</p>
+  </footer>
+</body>
+</html>
