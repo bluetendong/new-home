@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📓 다이어리</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .diary-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .entry {
+      background: #fffefa;
+      border: 2px dashed #d0bfff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(210, 180, 255, 0.2);
+      transition: transform 0.2s;
+    }
+
+    .entry:hover {
+      transform: scale(1.01);
+      box-shadow: 0 6px 14px rgba(210, 180, 255, 0.35);
+    }
+
+    .entry h2 {
+      margin: 0 0 8px 0;
+      font-size: 1.5rem;
+      color: #7058ab;
+    }
+
+    .entry .date {
+      font-size: 0.95rem;
+      color: #999;
+      margin-bottom: 12px;
+    }
+
+    .entry .content {
+      white-space: pre-line;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📓 다이어리</h1>
+    <div class="menu">
+      <div class="menubutten"><a href="index.html">메인으로 돌아가기</a></div>
+    </div>
+  </header>
+
+  <main class="diary-container">
+    <div class="entry">
+      <h2>2025년 6월 27일 - 핑크빛 구름 같은 하루</h2>
+      <div class="date">2025.06.27</div>
+      <div class="content">
+오늘은 정말 꿈같은 날이었어 ☁️  
+카페에서 좋아하는 음료를 마시고, 새로 산 노래를 들으면서 산책했지.  
+하늘이 분홍색으로 물들었는데… 완전 뉴진스 앨범 자켓 같았어 🎧
+      </div>
+    </div>
+
+    <div class="entry">
+      <h2>2025년 6월 25일 - TRPG 세션 후기</h2>
+      <div class="date">2025.06.25</div>
+      <div class="content">
+오늘은 자캐 릴리가 또 눈물의 결단을 내렸다...  
+다들 몰입 너무 잘 해줘서 감정이 터질 뻔 ㅠㅠ  
+다음 세션까지 자캐 일기 또 써야지 💜
+      </div>
+    </div>
+  </main>
+</body>
+</html>
