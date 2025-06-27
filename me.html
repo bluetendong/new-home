@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>프로필</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .diary-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .entry {
+      background: #fffefa;
+      border: 2px dashed #d0bfff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(210, 180, 255, 0.2);
+      transition: transform 0.2s;
+    }
+
+    .entry:hover {
+      transform: scale(1.01);
+      box-shadow: 0 6px 14px rgba(210, 180, 255, 0.35);
+    }
+
+    .entry h2 {
+      margin: 0 0 8px 0;
+      font-size: 1.5rem;
+      color: #7058ab;
+    }
+
+    .entry .date {
+      font-size: 0.95rem;
+      color: #999;
+      margin-bottom: 12px;
+    }
+
+    .entry .content {
+      white-space: pre-line;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/blue-plaid-2699776_1280.jpg" alt="헤더 이미지" class="header-image" />
+    
+
+<div id="menu-placeholder"></div>
+  </header>    
+
+  <script src="js/include.js"></script>
+
+  <main class="diary-container">
+    <div class="entry">
+      <h2>블루텐동</h2>
+      <div class="date">9n년생 그림그리기 / trpg를 좋아해요.</div>
+      <div class="content">
+친구해요
+      </div>
+    </div>
+    
+    </div>
+  </main>
+</body>
+</html>
