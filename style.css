@@ -8,7 +8,8 @@
 /* 기본 설정 */
 body {
   font-family: 'LanaPixel';
-  background: linear-gradient(135deg, #fef4ff, #e9f5ff);
+  background-image: url(img/backimg.jpg);
+  background-size: cover;
   color: #3e3e3e;
   max-width: 700px;
   margin: 30px auto;
@@ -17,12 +18,8 @@ body {
 
 /* 헤더 */
 header {
-  background: linear-gradient(135deg, #d4e0ff, #ffe6f7);
-  padding: 30px 20px;
-  border-radius: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
-  box-shadow: 0 0 20px rgba(189, 219, 255, 0.5);
 }
 
 header h1 {
@@ -35,51 +32,35 @@ header h1 {
 .menu {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  border: solid 1px;
-  margin-top: 20px;
+  flex-wrap: nowrap;
+  border: 2px solid #000080;
+  border-radius: 4px;
+  margin: 10px 0;
+  background-color: #c0c0c0; /* 회색 배경 */
+  height: 30px;
+  box-shadow: inset 1px 1px #fff, inset -1px -1px #808080;
 }
 
-.menubutten {
-  background: linear-gradient(145deg, #ffffff, #e9e5ff);
-  padding: 5px 5px;
-  border-radius: 14px;
-  border: 1.5px solid #c4bfff;
-  box-shadow: 0 4px 8px rgba(170, 190, 255, 0.4);
-  transition: all 0.3s ease;
-}
-
-.menubutten a {
-  text-decoration: none;
-  color: #694dcd;
-  font-weight: bold;
-  font-size: 1.15rem;
-}
-
-.menubutten:hover {
-  transform: translateY(-2px);
-  background: #f0ecff;
-  box-shadow: 0 6px 14px rgba(141, 163, 255, 0.6);
-}
-
-/* 프로필 카드 */
-.profile-card {
+.menubutten, .menubutten2 {
+  padding: 5px 0;
+  width: 80px;
+  height: 20px;
+  text-align: center;
+  border-right: 1px solid #000;
   display: flex;
   align-items: center;
-  gap: 20px;
-  background: linear-gradient(to right, #fff8fc, #ecf3ff);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(190, 180, 255, 0.25);
+  justify-content: center;
 }
 
-.profile-card img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2.5px solid #c6aaff;
-  box-shadow: 0 0 8px #f2dfff;
+.menubutten2 {
+  border-right: none;
+}
+
+.menubutten a, .menubutten2 a {
+  text-decoration: none;
+  color: #000080; /* 90년대 파랑 */
+  font-weight: bold;
+  font-size: 13px;
 }
 
 /* 모바일 대응 */
@@ -87,11 +68,6 @@ header h1 {
   .menu {
     flex-direction: column;
     align-items: center;
-  }
-
-  .profile-card {
-    flex-direction: column;
-    text-align: center;
   }
 }
 
@@ -102,4 +78,73 @@ header h1 {
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0 4px 15px rgba(200, 180, 255, 0.3);
+}
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1135.ani), url(https://cur.cursors-4u.net/anime/ani-12/ani1135.png), auto !important;} /* End https://www.cursors-4u.com */
+
+/* 슬라이드 영역 */
+.slideshow-container {
+  width: 100%;
+  max-width: 800px;
+  height: 200px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(150, 120, 255, 0.3);
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* 글 영역 */
+.text-section {
+  background-color: #fff;
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: center;
+  color: #444;
+  height: 300px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.text-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #865ce5;
+}
+
+/* 배너 영역 */
+.banner-section {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  height: 400px;
+  overflow: scroll;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(200, 180, 255, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.banner-img:hover {
+  transform: scale(1.02);
+}
+
+.banner-section ::-webkit-scrollbar{
+  width: 5px; 
+  height: 390px;
+
 }
